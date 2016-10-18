@@ -1,0 +1,24 @@
+{
+    "plugins": {
+        "./server/todos": {
+          "enable": true
+        },
+        "./server/webapp": {
+          "enable": false,
+            "options": {
+                "pageTitle": "Electrode Explorer",
+                "devServer": {
+                    "port": "2992"
+                },
+                "paths": {
+                    "/{args*}": {
+                        "view": "index",
+                        "content": {
+                            "module": "./server/app"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

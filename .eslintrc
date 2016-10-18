@@ -1,0 +1,7 @@
+{
+  extends: [
+    "./node_modules/electrode-archetype-react-app/config/eslint/.eslintrc-base",
+    "./node_modules/electrode-archetype-react-app/config/eslint/.eslintrc-node",
+    "./node_modules/electrode-archetype-react-app/config/eslint/.eslintrc-react"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "version": "1.6.0",
+  "timestamp": 1476812474314,
+  "context": "client",
+  "output": {
+    "path": "dist/js",
+    "filename": "bundle.[hash].js",
+    "publicPath": ""
+  },
+  "assetsFile": "dist/isomorphic-assets.json"
+}
