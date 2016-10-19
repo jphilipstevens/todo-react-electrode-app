@@ -1,4 +1,5 @@
 import todos from "./todos";
+import webServer from "electrode-server";
 
 const config = {
   connections: {
@@ -9,7 +10,4 @@ const config = {
   }
 };
 
-require("electrode-server")(config)
-  .then((server) => {
-    server.route(todos);
-  });
+webServer(config).then((server) => server.route(todos));

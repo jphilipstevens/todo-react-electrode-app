@@ -1,16 +1,17 @@
-import getAllTodos from "./get-all-todos";
+import TodoService from "./service";
+
+const route = {
+  method: "GET",
+  path: "/todos",
+  handler: (request, reply) => {
+    reply(TodoService.getAllTodos());
+  }
+};
 
 const TodoPlugin = {};
 
 TodoPlugin.register = (server, options, next) => {
-  server.route({
-    method: "GET",
-    path: "/todos",
-    handler: (request, reply) => {
-      reply(getAllTodos());
-    }
-  });
-
+  server.route(route);
   return next();
 };
 
