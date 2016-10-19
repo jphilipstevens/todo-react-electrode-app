@@ -8,7 +8,7 @@ This app is a simple TODO app. you can view, create, edit any todo.
 
 ## API
 
-Grab all my TODOS
+### Grab all my TODOS
 GET /api/todos
 List all your Todos
   Response 200
@@ -21,7 +21,7 @@ List all your Todos
         }]
     }
 
-Create a new TODO
+### Create a new TODO
 POST /api/todo
 Body
   {
@@ -37,7 +37,7 @@ Body
     completed: false
   }
 
-Update a TODO
+### Update a TODO
 PUT /api/todo/:id
 Body
   {
@@ -53,3 +53,11 @@ Body
     description: "I am a TODO",
     completed: false
   }
+
+
+## Need Help On
+There are a lot of things that need to be done:
+- implement API endpoints
+- add server side rendering
+- configure and use winston logging
+- add test code
