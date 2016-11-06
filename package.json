@@ -4,19 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "gulp check",
-    "coverage": "gulp check",
     "build": "gulp build",
     "server": "gulp run server",
-<<<<<<< Updated upstream
-    "test": "echo \"Error: no test specified\" && exit 1"
-=======
+    "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 9001 -c .storybook"
->>>>>>> Stashed changes
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@kadira/storybook": "^2.29.3",
     "electrode-archetype-react-app": "^1.3.2",
     "electrode-archetype-react-app-dev": "^1.3.2",
     "gulp": "^3.9.1",
@@ -31,14 +27,9 @@
     "electrode-static-paths": "^1.0.0",
     "isomorphic-loader": "^1.6.0",
     "lodash": "^4.16.4",
-<<<<<<< Updated upstream
-    "react-redux": "^4.4.5"
-=======
     "material-ui": "^0.16.1",
     "node-uuid": "^1.4.7",
     "react-redux": "^4.4.5",
-    "react-tap-event-plugin": "^1.0.0",
-    "redux-thunk": "^2.1.0"
->>>>>>> Stashed changes
+    "react-tap-event-plugin": "^1.0.0"
   }
 }

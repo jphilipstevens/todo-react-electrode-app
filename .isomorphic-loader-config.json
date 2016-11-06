@@ -1,37 +1,12 @@
 {
   "valid": true,
   "version": "1.6.0",
-<<<<<<< Updated upstream
-  "timestamp": 1476879445619,
+  "timestamp": 1478403261482,
   "context": "client",
   "output": {
-    "path": "/",
-    "filename": "bundle.dev.js",
-    "publicPath": "http://localhost:2992/js/"
+    "path": "dist/js",
+    "filename": "bundle.[hash].js",
+    "publicPath": ""
   },
-  "assets": {
-    "marked": {},
-    "chunks": {
-      "main": [
-        "bundle.dev.js",
-        "bundle.dev.js.map"
-      ]
-    }
-  },
-  "webpackDev": {
-    "skipSetEnv": false,
-    "url": "http://localhost:2992",
-    "addUrl": false
-  },
-  "isWebpackDev": true,
-=======
-  "timestamp": 1478409317867,
-  "context": "test/client",
-  "output": {
-    "path": "/_karma_webpack_/",
-    "filename": "[name]",
-    "publicPath": "/_karma_webpack_/"
-  },
->>>>>>> Stashed changes
-  "assetsFile": "/isomorphic-assets.json"
+  "assetsFile": "dist/isomorphic-assets.json"
 }
