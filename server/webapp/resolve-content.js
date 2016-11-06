@@ -1,7 +1,7 @@
 import _ from "lodash";
 import Path from "path";
 
-/**
+/*
  * Resolve the content that will fill the page.
  *
  *
