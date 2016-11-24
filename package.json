@@ -7,7 +7,8 @@
     "build": "gulp build",
     "server": "gulp server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "lint": "eslint client server stories; exit 0"
   },
   "author": "",
   "license": "ISC",
