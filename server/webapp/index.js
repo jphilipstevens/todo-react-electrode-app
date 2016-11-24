@@ -11,7 +11,6 @@ import pluginOptionsDefaults from "./defaults";
 const HTTP_ERROR_500 = 500;
 const HTTP_REDIRECT = 302;
 
-
 const makeRouteHandler = (options, userContent) => {
   const CONTENT_MARKER = "{{SSR_CONTENT}}";
   const BUNDLE_MARKER = "{{WEBAPP_BUNDLES}}";
@@ -67,16 +66,16 @@ const makeRouteHandler = (options, userContent) => {
     const renderPage = (content) => {
       return html.replace(/{{[A-Z_]*}}/g, (m) => {
         switch (m) {
-          case CONTENT_MARKER:
-            return content.html || "";
-          case TITLE_MARKER:
-            return options.pageTitle;
-          case BUNDLE_MARKER:
-            return makeBundles();
-          case PREFETCH_MARKER:
-            return addPrefetch(content.prefetch);
-          default:
-            return `Unknown marker ${m}`;
+        case CONTENT_MARKER:
+          return content.html || "";
+        case TITLE_MARKER:
+          return options.pageTitle;
+        case BUNDLE_MARKER:
+          return makeBundles();
+        case PREFETCH_MARKER:
+          return addPrefetch(content.prefetch);
+        default:
+          return `Unknown marker ${m}`;
         }
       });
     };
